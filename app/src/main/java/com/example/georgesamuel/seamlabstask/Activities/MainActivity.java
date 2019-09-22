@@ -188,22 +188,6 @@ public class MainActivity extends AppCompatActivity implements RecyclerItemTouch
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        if(item.getItemId() == R.id.search){
-
-        }
-
-        return true;
-    }
-
-    @Override
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction, int position) {
         if (viewHolder instanceof ArticlesAdapter.ArticlesViewHolder) {
 
